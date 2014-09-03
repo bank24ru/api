@@ -58,7 +58,7 @@ public class InternetAcquiringOrderTest extends Utils {
     @Test
     public void test() {
 
-        String r = api.post("AQ0100", ",\"sum\":\"1\",\"demo\":\"true\"");
+        String r = api.post("AQ0100", "\"sum\":\"1\",\"demo\":\"true\"");
 
         Assert.assertTrue(r.contains("processed"));
 
